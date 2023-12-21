@@ -11,10 +11,10 @@ import time
 ### CONSTANTS ###
 # Physics Properties
 MASS_OF_BALL = 1
-ELASTICITY_OF_BALL = .9
-INIT_X_VEL_OF_BALL = 200
+ELASTICITY_OF_BALL = .9 # max is 1, amount of kinetic energy retained 
+INIT_X_VEL_OF_BALL = 200 # simulates throwing the ball 
 INIT_Y_VEL_OF_BALL = -800
-SPACE_GRAVITY_PYMUNK = (0, -900)
+SPACE_GRAVITY_PYMUNK = (0, -900) # gravity -900 simulates real gravity 0,0 would be zero gravity
 
 # Position and Sizes
 WIDTH_OF_PYGAME = 1000
@@ -29,12 +29,12 @@ SEGEMENTS_OF_CIRCLE = 500
 
 # Special Growth Property
 GROWTH_COOLDOWN_THRESHOLD = 10 # Number of frames to wait before allowing growth again
-INC_RATE = 1
+INC_RATE = 1 # increment the size of the ball
 
 # Game Variables
 SPACE_STEP_PYMUNK = 1/100.0 # change this if ball starts going through circle default is 60
-CLOCK_TICK = 60
-MAX_TRAIL_LENGTH = 100
+CLOCK_TICK = 60 # fps
+MAX_TRAIL_LENGTH = 100 
 TRAIL_GROWTH_RATE = 1
 
 def to_pygame(p):
