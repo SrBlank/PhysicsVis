@@ -11,9 +11,9 @@ import time
 ### CONSTANTS ###
 # Physics Properties
 MASS_OF_BALL = 1
-ELASTICITY_OF_BALL = 1
+ELASTICITY_OF_BALL = .9
 INIT_X_VEL_OF_BALL = 200
-INIT_Y_VEL_OF_BALL = 200
+INIT_Y_VEL_OF_BALL = -800
 SPACE_GRAVITY_PYMUNK = (0, -900)
 
 # Position and Sizes
